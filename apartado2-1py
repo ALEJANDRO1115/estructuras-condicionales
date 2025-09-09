@@ -1,0 +1,23 @@
+
+# Programa: Contador de dígitos
+
+# Solicita el número al usuario
+numero = int(input("Ingresa un número entero: "))
+
+# Si el número es negativo, lo convertimos a positivo
+numero = abs(numero)
+
+# Inicializa el contador
+contador = 0
+
+# Caso especial: si el número es 0, tiene 1 dígito
+if numero == 0:
+    contador = 1
+else:
+    # Cuenta los dígitos usando un ciclo while
+    while numero > 0:
+        numero //= 10
+        contador += 1
+
+# Muestra el resultado
+print(f"El número tiene {contador} dígito(s).")
