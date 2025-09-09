@@ -1,0 +1,20 @@
+
+# Programa: Conversor de calificaciones numéricas a letras
+
+# Solicita la calificación al usuario
+calificacion = int(input("Ingresa tu calificación (0–100): "))
+
+# Verifica que esté en el rango válido
+if 0 <= calificacion <= 100:
+    if calificacion >= 90:
+        print("Tu calificación en letra es: A")
+    elif calificacion >= 80:
+        print("Tu calificación en letra es: B")
+    elif calificacion >= 70:
+        print("Tu calificación en letra es: C")
+    elif calificacion >= 60:
+        print("Tu calificación en letra es: D")
+    else:
+        print("Tu calificación en letra es: F")
+else:
+    print("La calificación ingresada no es válida. Debe estar entre 0 y 100.")

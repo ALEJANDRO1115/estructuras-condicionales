@@ -1,0 +1,15 @@
+
+# Programa: Comparación de tres números
+
+# Solicita los tres números al usuario
+num1 = float(input("Ingresa el primer número: "))
+num2 = float(input("Ingresa el segundo número: "))
+num3 = float(input("Ingresa el tercer número: "))
+
+# Determina el mayor y el menor
+mayor = max(num1, num2, num3)
+menor = min(num1, num2, num3)
+
+# Muestra los resultados
+print(f"El número mayor es: {mayor}")
+print(f"El número menor es: {menor}")
